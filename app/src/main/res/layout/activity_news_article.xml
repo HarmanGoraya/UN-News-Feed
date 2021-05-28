@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsArticleActivity">
+
+    <!-- TODO: PHASE 2 -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        tools:layout_editor_absoluteX="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/un_logo"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:contentDescription="@string/logo"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/summary"
+        android:textColor="#1C1B1B"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        tools:layout_editor_absoluteX="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+
+    <Button
+        android:id="@+id/visit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/visit_website"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@id/visit"
+        app:layout_constraintRight_toRightOf="@id/visit"
+        app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
+        android:contentDescription="@string/todo"
+        android:focusable="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

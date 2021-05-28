@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RSS Reader</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="description">description</string>
+    <string name="visit_website">VISIT WEBSITE</string>
+    <string name="summary">summary</string>
+    <string name="health">Health</string>
+    <string name="topic">Topic</string>
+    <string name="date3">date</string>
+    <string name="logo">logo</string>
+    <string name="todo">TODO</string>
+</resources>
